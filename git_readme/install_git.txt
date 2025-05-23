@@ -1,0 +1,3 @@
+https://training.github.com/downloads/github-git-cheat-sheet/
+https://github.com/dashboard
+https://github.com/victorgzcn/victorgzcn.git

@@ -1,0 +1,24 @@
+Example Workflow
+# Clone a repository
+git clone https://github.com/user/project.git
+cd project
+
+# Create a branch
+git checkout -b fix-bug
+
+# Make changes, then save them
+git add .
+git commit -m "Fix critical bug"
+
+# Push to GitHub
+git push origin fix-bug
+
+# Create a Pull Request on GitHub's website
+Learning Resources
+Interactive Tutorial: Learn Git Branching
+
+Cheat Sheet: GitHub's Cheat Sheet
+
+Book: Pro Git (Free online)
+
+Git has a learning curve, but once mastered, it becomes an indispensable tool for coding! Start with small projects to practice. 🚀

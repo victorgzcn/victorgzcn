@@ -1,0 +1,157 @@
+<article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 class="heading-element" dir="auto" tabindex="-1">LearnGitBranching</h1><a aria-label="Permalink: LearnGitBranching" class="anchor" href="#learngitbranching" id="user-content-learngitbranching"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://github.com/pcottle/learnGitBranching/pulls"><img alt="PRs Welcome" data-canonical-src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?" src="https://camo.githubusercontent.com/eca15190dc1902642adfdfeabefdb31490eeaa24e87ae9ef26b19b0b911e4ce3/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5052732d77656c636f6d652d627269676874677265656e2e7376673f" style="max-width: 100%;"/></a></p>
+<p dir="auto">LearnGitBranching is a git repository visualizer, sandbox, and a series of educational tutorials and challenges. Its primary purpose is to help developers understand git through the power of visualization (something that's absent when working on the command line). This is achieved through a game with different levels to get acquainted with the different git commands.</p>
+<p dir="auto">You can input a variety of commands into LearnGitBranching (LGB) -- as commands are processed, the nearby commit tree will dynamically update to reflect the effects of each command:</p>
+<p dir="auto"><a href="https://user-images.githubusercontent.com/6324814/108740487-02c3c400-7536-11eb-9dd1-53275cdf76fb.gif" rel="noopener noreferrer nofollow" target="_blank"><img alt="demo-gif" data-animated-image="" src="https://user-images.githubusercontent.com/6324814/108740487-02c3c400-7536-11eb-9dd1-53275cdf76fb.gif" style="max-width: 100%;"/></a></p>
+<p dir="auto">This visualization combined with tutorials and "levels" can help both beginners and intermediate developers polish their version control skills. A quick demo is available here:
+<a href="https://pcottle.github.io/learnGitBranching/?demo" rel="nofollow">https://pcottle.github.io/learnGitBranching/?demo</a></p>
+<p dir="auto">Or, you can launch the application normally here:
+<a href="https://pcottle.github.io/learnGitBranching/" rel="nofollow">https://pcottle.github.io/learnGitBranching/</a></p>
+<div class="markdown-heading" dir="auto"><h3 class="heading-element" dir="auto" tabindex="-1">Sandbox Mode</h3><a aria-label="Permalink: Sandbox Mode" class="anchor" href="#sandbox-mode" id="user-content-sandbox-mode"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto">By default the application launches in "sandbox mode" with a basic repository already created. Here you can enter commands and mess around with a repository as much as you like. Keep in mind you can</p>
+<ul dir="auto">
+<li><code>undo</code> to undo the effects of the last command</li>
+<li><code>reset</code> to start over with a clean slate (works in levels too)</li>
+<li><code>git clone</code> to simulate remote repositories!</li>
+</ul>
+<p dir="auto">Sandbox mode can be great for demonstrating something to a friend, but the real learning is with levels...</p>
+<div class="markdown-heading" dir="auto"><h2 class="heading-element" dir="auto" tabindex="-1">Levels</h2><a aria-label="Permalink: Levels" class="anchor" href="#levels" id="user-content-levels"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto">Type <code>levels</code> to see the available lessons / challenges (and which ones you have solved so far). Each level series aims to teach some high-level git concept, and each tab of levels separates major worlds of info (like remote repositories versus local).</p>
+<p dir="auto">For some added fun, there is a "git golf" concept where we keep track of how many commands you use to solve each level. See if you can match all of our records!</p>
+<div class="markdown-heading" dir="auto"><h3 class="heading-element" dir="auto" tabindex="-1">Sharing permalinks</h3><a aria-label="Permalink: Sharing permalinks" class="anchor" href="#sharing-permalinks" id="user-content-sharing-permalinks"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto">You can share a link to LearnGitBranching with an arbitrary set of commands that will execute upon load by using the <code>command</code> URL parameter. You will also likely want to disable the intro dialog for this case with the <code>NODEMO</code> url param; here is <a href="https://learngitbranching.js.org/?NODEMO&amp;command=echo%20%22hello%22;%20git%20commit" rel="nofollow">an example</a> to get started.</p>
+<div class="markdown-heading" dir="auto"><h3 class="heading-element" dir="auto" tabindex="-1">Level Builder</h3><a aria-label="Permalink: Level Builder" class="anchor" href="#level-builder" id="user-content-level-builder"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto">You can build levels with the <code>build level</code> command. A dialog will walk you through the process, and at the end it will show you a JSON blob that represents the level you just created. Paste that in a <a href="https://gist.github.com">gist</a> or directly into an issue and I can check it out / merge in your changes! You can also share this level directly with friends by having them run <code>import level</code> and paste the JSON in the resulting text field, or simply send them a custom URL with the the gist ID in the parameters, like so:
+<a href="https://pcottle.github.io/learnGitBranching/?gist_level_id=a84407351f9c9f0cb241" rel="nofollow">https://pcottle.github.io/learnGitBranching/?gist_level_id=a84407351f9c9f0cb241</a></p>
+<div class="markdown-heading" dir="auto"><h2 class="heading-element" dir="auto" tabindex="-1">Reporting Bugs / Opening Issues</h2><a aria-label="Permalink: Reporting Bugs / Opening Issues" class="anchor" href="#reporting-bugs--opening-issues" id="user-content-reporting-bugs--opening-issues"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto">When reporting bugs, try running the command <code>debug_copyTree()</code> in your JS console when in a state just before reproducing a bug. This can avoid having to copy all the commands you used to get into a specific state. (I can then use the <code>importTreeNow</code> command to get to that exact state)</p>
+<div class="markdown-heading" dir="auto"><h2 class="heading-element" dir="auto" tabindex="-1">Building yourself / Contributing Functionality</h2><a aria-label="Permalink: Building yourself / Contributing Functionality" class="anchor" href="#building-yourself--contributing-functionality" id="user-content-building-yourself--contributing-functionality"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto">For contributing core functionality in the app, you'll probably want to test your changes
+at least once before submitting a pull request. That means you'll need the "gulp.js" build tool to build the app:</p>
+<p dir="auto"><a href="https://gulpjs.com/docs/en/getting-started/quick-start" rel="nofollow">https://gulpjs.com/docs/en/getting-started/quick-start</a></p>
+<p dir="auto">You'll also need <code>yarn</code> to download all the dependencies of the project.</p>
+<p dir="auto">The general workflow / steps are below:</p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content='git clone &lt;your fork of the repo&gt;
+cd learnGitBranching
+yarn install
+
+git checkout -b newAwesomeFeature
+vim ./src/js/git/index.js # some changes
+yarn gulp fastBuild # skips tests and linting, faster build
+
+# after building you can open up your browser to the index.html
+open ./index.html
+# file generated and see your changes
+
+vim ./src/js/git/index.js # more changes
+yarn gulp build # runs tests and lint
+
+git commit -am "My new sweet feature!"
+git push
+# go online and request a pull' dir="auto"><pre>git clone <span class="pl-k">&lt;</span>your fork of the repo<span class="pl-k">&gt;</span>
+<span class="pl-c1">cd</span> learnGitBranching
+yarn install
+
+git checkout -b newAwesomeFeature
+vim ./src/js/git/index.js <span class="pl-c"><span class="pl-c">#</span> some changes</span>
+yarn gulp fastBuild <span class="pl-c"><span class="pl-c">#</span> skips tests and linting, faster build</span>
+
+<span class="pl-c"><span class="pl-c">#</span> after building you can open up your browser to the index.html</span>
+open ./index.html
+<span class="pl-c"><span class="pl-c">#</span> file generated and see your changes</span>
+
+vim ./src/js/git/index.js <span class="pl-c"><span class="pl-c">#</span> more changes</span>
+yarn gulp build <span class="pl-c"><span class="pl-c">#</span> runs tests and lint</span>
+
+git commit -am <span class="pl-s"><span class="pl-pds">"</span>My new sweet feature!<span class="pl-pds">"</span></span>
+git push
+<span class="pl-c"><span class="pl-c">#</span> go online and request a pull</span></pre></div>
+<p dir="auto">Alternatively, you can also build and run the app in a pre-configured online workspace:</p>
+<p dir="auto"><a href="https://gitpod.io/#https://github.com/pcottle/learnGitBranching/blob/main/src/js/git/index.js" rel="nofollow"><img alt="Open in Gitpod" data-canonical-src="https://gitpod.io/button/open-in-gitpod.svg" src="https://camo.githubusercontent.com/b04f5659467d23b5109ba935a40c00decd264eea25c22d50a118021349eea94f/68747470733a2f2f676974706f642e696f2f627574746f6e2f6f70656e2d696e2d676974706f642e737667" style="max-width: 100%;"/></a>
+<a href="https://app.codeanywhere.com/#https://github.com/pcottle/learnGitBranching" rel="nofollow"><img alt="Open in Codeanywhere" data-canonical-src="https://codeanywhere.com/img/open-in-codeanywhere-btn.svg" src="https://camo.githubusercontent.com/307c7030f138c5dd4feae3dfb35963928016845c859d9e9a59f328d41913bb23/68747470733a2f2f636f6465616e7977686572652e636f6d2f696d672f6f70656e2d696e2d636f6465616e7977686572652d62746e2e737667" style="max-width: 100%;"/></a></p>
+<div class="markdown-heading" dir="auto"><h2 class="heading-element" dir="auto" tabindex="-1">Other Technical Details</h2><a aria-label="Permalink: Other Technical Details" class="anchor" href="#other-technical-details" id="user-content-other-technical-details"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto">LearnGitBranching is a pretty simple application (from a technical perspective). There's no backend database or any AJAX requests -- it's a 100% clientside application written in JavaScript. The production version (on github.io) literally just serves up an HTML page with some JS and CSS.</p>
+<p dir="auto">Here is the high-level process of the build:</p>
+<ul dir="auto">
+<li>CSS is written into just one stylesheet (there is not a whole ton of styling)</li>
+<li>New HTML is written into a template HTML file (<code>template.index.html</code>). This is only needed
+for new views</li>
+<li>The app is "built", which outputs:
+<ul dir="auto">
+<li><code>index.html</code> in the root directory</li>
+<li>CSS and JS files in <code>./build</code> directory</li>
+</ul>
+</li>
+<li>If the app is being built for production, then these CSS and JS files
+are hashed (to bust caches) and tests are run</li>
+<li>That's it!</li>
+</ul>
+<p dir="auto">Thus, if you build the app locally, all you have to do in order to run the app is just open up <code>index.html</code> in the root directory of the repo. Pretty simple</p>
+<div class="markdown-heading" dir="auto"><h3 class="heading-element" dir="auto" tabindex="-1">Docker</h3><a aria-label="Permalink: Docker" class="anchor" href="#docker" id="user-content-docker"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto">You can run the most recently built stable image with <code>docker run -p 8080:80 ghcr.io/pcottle/learngitbranching:main</code>. Access your environment with at <a href="http://localhost:8080/" rel="nofollow">http://localhost:8080/</a></p>
+<p dir="auto">You can build the app and image with the command: <code>docker build -t ghcr.io/pcottle/learngitbranching:latest</code>. See the <a href="/pcottle/learnGitBranching/blob/main/Makefile">Makefile</a> for information on how to build locally with docker.</p>
+<div class="markdown-heading" dir="auto"><h2 class="heading-element" dir="auto" tabindex="-1">Some of our amazing contributors</h2><a aria-label="Permalink: Some of our amazing contributors" class="anchor" href="#some-of-our-amazing-contributors" id="user-content-some-of-our-amazing-contributors"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://github.com/pcottle"><img height="80" src="https://avatars0.githubusercontent.com/u/1135007?v=4" style="max-width: 100%;" title="pcottle" width="80"/></a>
+<a href="https://github.com/Hongarc"><img height="80" src="https://avatars1.githubusercontent.com/u/19208123?v=4" style="max-width: 100%;" title="Hongarc" width="80"/></a>
+<a href="https://github.com/twmht"><img height="80" src="https://avatars1.githubusercontent.com/u/1567200?v=4" style="max-width: 100%;" title="twmht" width="80"/></a>
+<a href="https://github.com/JuhoKang"><img height="80" src="https://avatars1.githubusercontent.com/u/4745294?v=4" style="max-width: 100%;" title="JuhoKang" width="80"/></a>
+<a href="https://github.com/sunshowers"><img height="80" src="https://avatars3.githubusercontent.com/u/180618?v=4" style="max-width: 100%;" title="sunshowers" width="80"/></a>
+<a href="https://github.com/sPATROL"><img height="80" src="https://avatars0.githubusercontent.com/u/11875983?v=4" style="max-width: 100%;" title="sPATROL" width="80"/></a>
+<a href="https://github.com/coyl"><img height="80" src="https://avatars1.githubusercontent.com/u/274452?v=4" style="max-width: 100%;" title="coyl" width="80"/></a>
+<a href="https://github.com/alexeiberkov"><img height="80" src="https://avatars1.githubusercontent.com/u/4151345?v=4" style="max-width: 100%;" title="alexeiberkov" width="80"/></a>
+<a href="https://github.com/aschrab"><img height="80" src="https://avatars1.githubusercontent.com/u/39620?v=4" style="max-width: 100%;" title="aschrab" width="80"/></a>
+<a href="https://github.com/bcbcarl"><img height="80" src="https://avatars0.githubusercontent.com/u/135734?v=4" style="max-width: 100%;" title="bcbcarl" width="80"/></a>
+<a href="https://github.com/ahonorat"><img height="80" src="https://avatars1.githubusercontent.com/u/5851945?v=4" style="max-width: 100%;" title="ahonorat" width="80"/></a>
+<a href="https://github.com/nem75"><img height="80" src="https://avatars0.githubusercontent.com/u/1327785?v=4" style="max-width: 100%;" title="nem75" width="80"/></a>
+<a href="https://github.com/eatdrinksleepcode"><img height="80" src="https://avatars0.githubusercontent.com/u/2099560?v=4" style="max-width: 100%;" title="eatdrinksleepcode" width="80"/></a>
+<a href="https://github.com/nlehuby"><img height="80" src="https://avatars3.githubusercontent.com/u/919962?v=4" style="max-width: 100%;" title="nlehuby" width="80"/></a>
+<a href="https://github.com/alexandear"><img height="80" src="https://avatars2.githubusercontent.com/u/3228886?v=4" style="max-width: 100%;" title="alexandear" width="80"/></a>
+<a href="https://github.com/PanAeon"><img height="80" src="https://avatars3.githubusercontent.com/u/686076?v=4" style="max-width: 100%;" title="PanAeon" width="80"/></a>
+<a href="https://github.com/donkirkby"><img height="80" src="https://avatars1.githubusercontent.com/u/1639148?v=4" style="max-width: 100%;" title="donkirkby" width="80"/></a>
+<a href="https://github.com/lroellin"><img height="80" src="https://avatars1.githubusercontent.com/u/3150983?v=4" style="max-width: 100%;" title="lroellin" width="80"/></a>
+<a href="https://github.com/ptsoccer"><img height="80" src="https://avatars1.githubusercontent.com/u/1102725?v=4" style="max-width: 100%;" title="ptsoccer" width="80"/></a>
+<a href="https://github.com/jankeromnes"><img height="80" src="https://avatars2.githubusercontent.com/u/599268?v=4" style="max-width: 100%;" title="jankeromnes" width="80"/></a>
+<a href="https://github.com/qiansen1386"><img height="80" src="https://avatars2.githubusercontent.com/u/1759658?v=4" style="max-width: 100%;" title="qiansen1386" width="80"/></a>
+<a href="https://github.com/renderf0x"><img height="80" src="https://avatars1.githubusercontent.com/u/6155643?v=4" style="max-width: 100%;" title="renderf0x" width="80"/></a>
+<a href="https://github.com/filipefilardi"><img height="80" src="https://avatars1.githubusercontent.com/u/7308241?v=4" style="max-width: 100%;" title="filipefilardi" width="80"/></a>
+<a href="https://github.com/rebangm"><img height="80" src="https://avatars2.githubusercontent.com/u/1638136?v=4" style="max-width: 100%;" title="rebangm" width="80"/></a>
+<a href="https://github.com/marcolivierarsenault"><img height="80" src="https://avatars2.githubusercontent.com/u/2634090?v=4" style="max-width: 100%;" title="marcolivierarsenault" width="80"/></a>
+<a href="https://github.com/pengi"><img height="80" src="https://avatars0.githubusercontent.com/u/1087673?v=4" style="max-width: 100%;" title="pengi" width="80"/></a>
+<a href="https://github.com/waldyrious"><img height="80" src="https://avatars2.githubusercontent.com/u/478237?v=4" style="max-width: 100%;" title="waldyrious" width="80"/></a>
+<a href="https://github.com/tym-network"><img height="80" src="https://avatars1.githubusercontent.com/u/2879545?v=4" style="max-width: 100%;" title="tym-network" width="80"/></a>
+<a href="https://github.com/zhyu"><img height="80" src="https://avatars1.githubusercontent.com/u/1728523?v=4" style="max-width: 100%;" title="zhyu" width="80"/></a>
+<a href="https://github.com/mgarciaisaia"><img height="80" src="https://avatars1.githubusercontent.com/u/1190974?v=4" style="max-width: 100%;" title="mgarciaisaia" width="80"/></a>
+<a href="https://github.com/YourSenseiCreeper"><img height="80" src="https://avatars1.githubusercontent.com/u/6324814?&amp;v=4" style="max-width: 100%;" title="YourSenseiCreeper" width="80"/></a>
+<a href="https://github.com/olsza"><img height="80" src="https://avatars1.githubusercontent.com/u/12556170?v=4" style="max-width: 100%;" title="Olsza" width="80"/></a></p>
+<div class="markdown-heading" dir="auto"><h2 class="heading-element" dir="auto" tabindex="-1">Helpful Folks</h2><a aria-label="Permalink: Helpful Folks" class="anchor" href="#helpful-folks" id="user-content-helpful-folks"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto">A big shoutout to these brave souls for extensively testing our sandbox and finding bugs and/or inconsistencies:</p>
+<ul dir="auto">
+<li>Nikita Kouevda</li>
+<li>Maksim Ioffe</li>
+<li>Dan Miller</li>
+</ul>
+<p dir="auto">And the following heroes for assisting in translating:</p>
+<ul dir="auto">
+<li>Jake Chen</li>
+<li>우리깃 ("urigit")</li>
+<li>"bcho"</li>
+<li>"scientific-coder"</li>
+<li>"ace-coder"</li>
+<li>Joël Thieffry</li>
+<li>Jens Bremmekamp ("nem75")</li>
+<li>"hilojack"</li>
+<li>Ming-Hsuan-Tu ("twmht")</li>
+<li>Mikhail Usov ("mikhailusov")</li>
+<li>Matias Garcia Isaia ("mgarciaisaia")</li>
+<li>Marc-Olivier Arsenault ("marcolivierarsenault")</li>
+<li>Eroany H Leader ("lhyqy5")</li>
+<li>Honorat ("ahonorat")</li>
+<li>Vasil Kulakov ("coyl") &amp; Lyubov Agadjanyan ("shayenblue")</li>
+<li>Aliaksei Berkau ("alexeiberkov")</li>
+<li>Mizunashi Mana ("mizunashi-mana")</li>
+<li>YourSenseiCreeper</li>
+<li>Olsza</li>
+</ul>
+<p dir="auto">Also huge shoutout for everyone who has put up a pull request that was pulled! Check out the 30+ contributors we have in the <a href="https://github.com/pcottle/learnGitBranching/graphs/contributors">Contributors View</a></p>
+<p dir="auto">And everyone who has reported an issue that was successfully closed!</p>
+</article>

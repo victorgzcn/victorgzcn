@@ -1,0 +1,104 @@
+<main class="site-content">
+<div class="container-lg p-responsive">
+<div class="markdown-body d-flex flex-wrap gutter">
+<div class="col-md-6">
+<h2 id="install">Install</h2>
+<h3 id="github-desktop">GitHub Desktop</h3>
+<p><a href="https://desktop.github.com">desktop.github.com</a></p>
+<h3 id="git-for-all-platforms">Git for All Platforms</h3>
+<p><a href="https://git-scm.com">git-scm.com</a></p>
+<h2 id="configure-tooling">Configure tooling</h2>
+<p>Configure user information for all local repositories</p>
+<p><code class="language-plaintext highlighter-rouge">$ git config --global user.name "[name]"</code></p>
+<p>Sets the name you want attached to your commit transactions</p>
+<p><code class="language-plaintext highlighter-rouge">$ git config --global user.email "[email address]"</code></p>
+<p>Sets the email you want attached to your commit transactions</p>
+<p><code class="language-plaintext highlighter-rouge">$ git config --global color.ui auto</code></p>
+<p>Enables helpful colorization of command line output</p>
+<h2 id="branches">Branches</h2>
+<p>Branches are an important part of working with Git. Any commits you make will be made on the branch you’re currently “checked out” to. Use <code class="language-plaintext highlighter-rouge">git status</code> to see which branch that is.</p>
+<p><code class="language-plaintext highlighter-rouge">$ git branch [branch-name]</code></p>
+<p>Creates a new branch</p>
+<p><code class="language-plaintext highlighter-rouge">$ git switch -c [branch-name]</code></p>
+<p>Switches to the specified branch and updates the working directory</p>
+<p><code class="language-plaintext highlighter-rouge">$ git merge [branch]</code></p>
+<p>Combines the specified branch’s history into the current branch. This is usually done in pull requests, but is an important Git operation.</p>
+<p><code class="language-plaintext highlighter-rouge">$ git branch -d [branch-name]</code></p>
+<p>Deletes the specified branch</p>
+</div>
+<div class="col-md-6">
+<h2 id="create-repositories">Create repositories</h2>
+<p>A new repository can either be created locally, or an existing repository can be cloned. When a repository was initialized locally, you have to push it to GitHub afterwards.</p>
+<p><code class="language-plaintext highlighter-rouge">$ git init</code></p>
+<p>The git init command turns an existing directory into a new Git repository inside the folder you are running this command. After using the <code class="language-plaintext highlighter-rouge">git init</code> command, link the local repository to an empty GitHub repository using the following command:</p>
+<p><code class="language-plaintext highlighter-rouge">$ git remote add origin [url]</code></p>
+<p>Specifies the remote repository for your local repository. The url points to a repository on GitHub.</p>
+<p><code class="language-plaintext highlighter-rouge">$ git clone [url]</code></p>
+<p>Clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits</p>
+<h2 id="the-gitignore-file">The .gitignore file</h2>
+<p>Sometimes it may be a good idea to exclude files from being tracked with Git. This is typically done in a special file named <code class="language-plaintext highlighter-rouge">.gitignore</code>. You can find helpful templates for <code class="language-plaintext highlighter-rouge">.gitignore</code> files at <a href="https://github.com/github/gitignore">github.com/github/gitignore</a>.</p>
+<h2 id="synchronize-changes">Synchronize changes</h2>
+<p>Synchronize your local repository with the remote repository on GitHub.com</p>
+<p><code class="language-plaintext highlighter-rouge">$ git fetch</code></p>
+<p>Downloads all history from the remote tracking branches</p>
+<p><code class="language-plaintext highlighter-rouge">$ git merge</code></p>
+<p>Combines remote tracking branches into current local branch</p>
+<p><code class="language-plaintext highlighter-rouge">$ git push</code></p>
+<p>Uploads all local branch commits to GitHub</p>
+<p><code class="language-plaintext highlighter-rouge">$ git pull</code></p>
+<p>Updates your current local working branch with all new commits from the corresponding remote branch on GitHub. <code class="language-plaintext highlighter-rouge">git pull</code> is a combination of <code class="language-plaintext highlighter-rouge">git fetch</code> and <code class="language-plaintext highlighter-rouge">git merge</code></p>
+</div>
+<div class="clearfix"></div>
+<div class="col-md-6">
+<h2 id="make-changes">Make changes</h2>
+<p>Browse and inspect the evolution of project files</p>
+<p><code class="language-plaintext highlighter-rouge">$ git log</code></p>
+<p>Lists version history for the current branch</p>
+<p><code class="language-plaintext highlighter-rouge">$ git log --follow [file]</code></p>
+<p>Lists version history for a file, beyond renames (works only for a single file)</p>
+<p><code class="language-plaintext highlighter-rouge">$ git diff [first-branch]...[second-branch]</code></p>
+<p>Shows content differences between two branches</p>
+<p><code class="language-plaintext highlighter-rouge">$ git show [commit]</code></p>
+<p>Outputs metadata and content changes of the specified commit</p>
+<p><code class="language-plaintext highlighter-rouge">$ git add [file]</code></p>
+<p>Snapshots the file in preparation for versioning</p>
+<p><code class="language-plaintext highlighter-rouge">$ git commit -m "[descriptive message]"</code></p>
+<p>Records file snapshots permanently in version history</p>
+<h2 id="redo-commits">Redo commits</h2>
+<p>Erase mistakes and craft replacement history</p>
+<p><code class="language-plaintext highlighter-rouge">$ git reset [commit]</code></p>
+<p>Undoes all commits after <code class="language-plaintext highlighter-rouge">[commit]</code>, preserving changes locally</p>
+<p><code class="language-plaintext highlighter-rouge">$ git reset --hard [commit]</code></p>
+<p>Discards all history and changes back to the specified commit</p>
+<blockquote>
+<p>CAUTION! Changing history can have nasty side effects. If you need to change commits that exist on GitHub (the remote), proceed with caution. If you need help, reach out at <a href="https://github.community">github.community</a> or contact support.</p>
+</blockquote>
+</div>
+<div class="col-md-6">
+<h2 id="glossary">Glossary</h2>
+<ul>
+<li>
+<strong>git</strong>: an open source, distributed version-control system</li>
+<li>
+<strong>GitHub</strong>: a platform for hosting and collaborating on Git repositories</li>
+<li>
+<strong>commit</strong>: a Git object, a snapshot of your entire repository compressed into a SHA</li>
+<li>
+<strong>branch</strong>: a lightweight movable pointer to a commit</li>
+<li>
+<strong>clone</strong>: a local version of a repository, including all commits and branches</li>
+<li>
+<strong>remote</strong>: a common repository on GitHub that all team members use to exchange their changes</li>
+<li>
+<strong>fork</strong>: a copy of a repository on GitHub owned by a different user</li>
+<li>
+<strong>pull request</strong>: a place to compare and discuss the differences introduced on a branch with reviews, comments, integrated tests, and more</li>
+<li>
+<strong>HEAD</strong>: representing your current working directory, the HEAD pointer can be moved to different branches, tags, or commits when using <code class="language-plaintext highlighter-rouge">git switch</code>
+</li>
+</ul>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</main>

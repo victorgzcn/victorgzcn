@@ -1,0 +1,40 @@
+Open PowerShell:
+
+Press Win + X and select "Windows PowerShell" or "Terminal" (if you have Windows Terminal installed)
+Verify Git Installation:
+git --version
+Configure Your Git Identity:
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+Replace with your actual name and email (the one you use for GitHub/GitLab/etc.)
+Verify the Configuration:
+git config --global --list
+Optional: Configure Default Editor (recommended if you prefer something other than Vim):
+git config --global core.editor "code --wait"  # For VS Code
+Other options:
+git config --global core.editor "notepad"  # For Notepad
+git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"  # For Notepad++
+Optional: Enable Color Output:
+git config --global color.ui true
+Where This Configuration is Stored:
+Git stores these global settings in a file located at:
+~/.gitconfig
+Additional Useful Configurations:
+Set default branch name (modern Git versions):
+git config --global init.defaultBranch main
+Enable credential helper (to remember your GitHub credentials):
+git config --global credential.helper wincred
+Configure line endings (important for cross-platform work):
+git config --global core.autocrlf true
+Verification:
+git config --list
+For just the global configurations:
+git config --global --list
+
+
+
+1. Basic Setup
+First, ensure Git is configured (you've already done this):
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+2. Starting a New Project

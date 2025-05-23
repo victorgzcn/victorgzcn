@@ -1,0 +1,109 @@
+1. Basic Setup
+First, ensure Git is configured (you've already done this):
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+2. Starting a New Project
+git init
+Clone an existing repository
+git clone https://github.com/username/repository.git
+(Downloads the entire project from GitHub/GitLab/etc.)
+3. Daily Workflow
+Check the status of your files
+git status
+(Shows changed/untracked files.)
+Add files to staging (prepare for commit)
+git add filename.txt       # Stage a specific file
+git add .                  # Stage all changed files
+git add *.js               # Stage all JS files
+Commit changes (save a snapshot)
+git commit -m "Description of changes"
+(Always write clear, concise commit messages!)
+Push changes to remote (e.g., GitHub)
+git push origin main
+(Uploads your commits to the remote repository.)
+Pull latest changes
+git pull origin main
+4. Branching (For Isolating Work)
+Create a new branch
+
+git branch new-feature      # Create branch
+git checkout new-feature    # Switch to branch
+Or use the shortcut: git checkout -b new-feature)
+Switches to the specified branch and updates the working directory
+$ git switch -c [branch-name]
+
+Merge branches
+git checkout main           # Switch to main branch
+git merge new-feature       # Merge changes from new-feature
+
+Delete a branch
+git branch -d new-feature   # Delete locally
+git push origin --delete new-feature  # Delete remotely
+
+5. Undoing Changes
+Discard unstaged changes
+git restore filename.txt    # Revert a file to last commit
+git restore .              # Revert all files
+
+Amend the last commit
+git commit --amend -m "New commit message"
+Reset to a previous commit (CAUTION)
+git reset --hard HEAD~1     # Go back 1 commit (destructive)
+git reset --soft HEAD~1     # Keep changes as unstaged
+
+6. Remote Repositories (GitHub/GitLab)
+git remote add origin https://github.com/username/repo.git
+View remote URLs
+git remote -v
+Push to a different branch
+7. Viewing History
+Show commit log
+git log                     # Detailed history
+git log --oneline           # Compact history
+git log --graph             # Visual branch history
+See changes in files
+git diff                    # Unstaged changes
+git diff --staged           # Staged changes
+
+8. Common Git Workflows
+Typical workflow for a new feature:
+git checkout -b new-feature
+
+Make changes and test code
+
+git add .
+
+git commit -m "Add new feature"
+
+git push origin new-feature
+
+Create a Pull Request on GitHub
+Syncing with upstream:
+git fetch origin # Download latest changes
+
+git merge origin/main # Merge into your branch
+9. Handling Merge Conflicts
+When Git can't automatically merge changes:
+
+Open the conflicted file
+
+Look for <<<<<<<, =======, >>>>>>> markers
+
+Edit the file to resolve conflicts
+
+git add filename.txt
+
+git commit
+10. Useful Tips
+.gitignore: Create a file named .gitignore to exclude files (e.g., node_modules/, .env).
+
+SSH Keys: Use ssh-keygen and add your key to GitHub for password-less pushes.
+
+GUI Tools:
+
+GitHub Desktop
+
+GitKraken
+
+VS Code's built-in Git tools
+
