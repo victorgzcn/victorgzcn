@@ -1,0 +1,16 @@
+For text content:
+
+text
+Dear {name},
+Thank you for being with us!
+[Press Enter twice to finish]
+For HTML content:
+
+text
+<html>
+<body>
+  <h1>Dear {name},</h1>
+  <p>Thank you for being with us!</p>
+</body>
+</html>
+[Press Enter twice to finish]

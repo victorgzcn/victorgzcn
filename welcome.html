@@ -1,0 +1,88 @@
+TEMPLATES = {
+    "welcome": {
+        "subject": "Welcome to PlyFlame, {name}! Your Journey Starts Here",
+        "text": """Dear {name},
+
+Thank you for joining PlyFlame Technologies! We're excited to have you on board.
+
+Here's what you can expect:
+- 24/7 customer support
+- Exclusive member discounts
+- Early access to new products
+
+Start exploring: https://www.plyflame.com
+
+Cheers,
+The PlyFlame Team""",
+
+        "html": """<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; }
+        .header { color: #256F9C; }
+        .button { background: #256F9C; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1 class="header">Welcome to PlyFlame, {name}!</h1>
+    <p>Thank you for joining PlyFlame Technologies! We're excited to have you on board.</p>
+
+    <h3>Here's what you can expect:</h3>
+    <ul>
+        <li>24/7 customer support</li>
+        <li>Exclusive member discounts</li>
+        <li>Early access to new products</li>
+    </ul>
+
+    <a href="https://www.plyflame.com" class="button">Start Exploring</a>
+
+    <p>Cheers,<br>The PlyFlame Team</p>
+</body>
+</html>"""
+    },
+    "followup": {
+        "subject": "{name}, your purchase on {last_purchase_date} - What's next?",
+        "text": """Hi {name},
+
+We noticed your recent purchase on {last_purchase_date} and wanted to share some recommendations:
+
+Recommended for you:
+1. Product X (complements your purchase)
+2. Accessory Y 
+3. Maintenance Kit Z
+
+Enjoy 15% OFF your next order with code: FOLLOWUP15
+
+The PlyFlame Team""",
+
+        "html": """<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 600px; margin: 0 auto; }
+        .product { border: 1px solid #eee; padding: 15px; margin: 10px 0; }
+        .discount { background: #FFF8E1; padding: 15px; text-align: center; }
+    </style>
+</head>
+<body>
+    <h2>Hi {name},</h2>
+    <p>We noticed your recent purchase on <strong>{last_purchase_date}</strong> and wanted to share some recommendations:</p>
+
+    <h3>Recommended for you:</h3>
+    <div class="product">
+        <h4>Product X</h4>
+        <p>Perfectly complements your purchase</p>
+        <a href="https://www.plyflame.com/product-x">View Product</a>
+    </div>
+
+    <div class="discount">
+        <h3>Enjoy 15% OFF your next order!</h3>
+        <p>Use code: <strong>FOLLOWUP15</strong></p>
+    </div>
+
+    <p>Best regards,<br>The PlyFlame Team</p>
+</body>
+</html>"""
+    }
+}

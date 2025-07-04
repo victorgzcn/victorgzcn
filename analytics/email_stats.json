@@ -1,0 +1,100 @@
+{
+  "campaign_default": {
+    "total_sent": 243,
+    "last_sent": "2025-07-04T21:10:50.202697",
+    "recipients": [
+      {
+        "id": "victor",
+        "sent_at": "2025-07-03T19:24:11.057674"
+      },
+      {
+        "id": "yechunli",
+        "sent_at": "2025-07-03T19:24:13.510706"
+      },
+      {
+        "id": "tania",
+        "sent_at": "2025-07-03T19:24:15.202170"
+      },
+      {
+        "id": "info",
+        "sent_at": "2025-07-03T19:24:18.817628"
+      },
+      {
+        "id": "victorgzcn",
+        "sent_at": "2025-07-03T19:24:20.496265"
+      },
+      {
+        "id": "9023474a",
+        "sent_at": "2025-07-04T16:42:00.872310"
+      }
+    ]
+  },
+  "campaign_template_welcome": {
+    "total_sent": 60,
+    "last_sent": "2025-07-04T16:42:00.873932",
+    "recipients": [
+      {
+        "id": "victor",
+        "sent_at": "2025-07-03T20:21:08.933255"
+      },
+      {
+        "id": "yechunli",
+        "sent_at": "2025-07-03T20:21:10.621436"
+      },
+      {
+        "id": "tania",
+        "sent_at": "2025-07-03T20:21:12.276800"
+      },
+      {
+        "id": "info",
+        "sent_at": "2025-07-03T20:21:15.581870"
+      },
+      {
+        "id": "victorgzcn",
+        "sent_at": "2025-07-03T20:21:17.265541"
+      },
+      {
+        "id": "9023474a",
+        "sent_at": "2025-07-04T16:42:00.873949"
+      }
+    ]
+  },
+  "campaign_template_anniversary": {
+    "total_sent": 1,
+    "last_sent": "2025-07-04T13:14:36.638608",
+    "recipients": [
+      {
+        "id": "victor",
+        "sent_at": "2025-07-04T13:14:36.638617"
+      }
+    ]
+  },
+  "campaign_template_Holidays Greeting": {
+    "total_sent": 7,
+    "last_sent": "2025-07-04T13:49:28.741191",
+    "recipients": [
+      {
+        "id": "victor",
+        "sent_at": "2025-07-04T13:19:19.611889"
+      },
+      {
+        "id": "yechunli",
+        "sent_at": "2025-07-04T13:30:39.189202"
+      },
+      {
+        "id": "info",
+        "sent_at": "2025-07-04T13:30:42.588486"
+      }
+    ]
+  },
+  "campaign_template_promotion": {
+    "total_sent": 1,
+    "last_sent": "2025-07-04T15:30:57.748868",
+    "recipients": [
+      {
+        "id": "victor",
+        "sent_at": "2025-07-04T15:30:57.748876"
+      }
+    ]
+  }
+}

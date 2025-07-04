@@ -1,0 +1,6 @@
+收信服务器：
+pop.qiye.aliyun.com（使用SSL，端口号995）
+imap.qiye.aliyun.com（使用SSL，端口号993）
+发信服务器：
+smtp.qiye.aliyun.com（使用SSL，端口号465）
+dRaeTlitc4MG9HIP
