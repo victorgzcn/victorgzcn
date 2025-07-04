@@ -1,41 +1,4 @@
-dRaeTlitc4MG9HIP
 
-import smtplib
-from email.mime.text import MIMEText
 
-smtp_server = "smtp.qiye.aliyun.com"
-smtp_port = 465
-smtp_user = "victor@plyflame.com"
-smtp_password = "dRaeTlitc4MG9HIP"
-
-# 创建邮件内容
-msg = MIMEText("This is a test email.", "plain", "utf-8")
-msg["From"] = smtp_user
-msg["To"] = "victor@plyflame.com"
-msg["Subject"] = "Test Email"
-
-# 使用 SSL 连接
-with smtplib.SMTP_SSL(smtp_server, smtp_port) as server:
-    server.login(smtp_user, smtp_password)
-    server.sendmail(smtp_user, ["victorgzcn@outlook.com"], msg.as_string())
-
-outlook
-
-import win32com.client as win32
-
-def send_outlook_email(recipient, subject, body):
-    outlook = win32.Dispatch('Outlook.Application')
-    mail = outlook.CreateItem(0)  # 0 represents MailItem
-    mail.To = recipient
-    mail.Subject = subject
-    mail.Body = body
-    mail.Send()
-
-# Example usage:
-send_outlook_email(
-    recipient="victor@plyflame.com",
-    subject="Test Email from Python",
-    body="This is a test email sent via Outlook using Python."
-)
 
 
